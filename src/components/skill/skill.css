@@ -1,0 +1,237 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+.skill-cont{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: 20px;
+    padding-left: 60px;
+    padding-top: 30px;
+    padding-bottom: 20px;
+    border: 0.5px solid #fff;
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 1px 1px 2px 2px rgb(50, 94, 94);
+}
+.skill{
+    font-size: 20px;
+    min-width: 150px;
+    cursor: pointer;
+}
+.skill span{
+    height: 5px;
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06% );
+    left: 180px;
+    margin-top: 13px;
+    border-radius: 10px;
+    position: absolute;
+}
+.js{
+    width: 70%;
+}
+.skill i{
+    right: 30px;
+    position: absolute;
+}
+.rc{
+    width: 65%;
+}
+.ht{
+    width: 75%;
+}
+.nd{
+    width: 45%;
+}
+.ex{
+    width: 55%;
+}
+.mn{
+    width: 65%;
+}
+.vr{
+    width: 55%;
+}
+.nx{
+    width: 55%;
+}
+.gt{
+    width: 70%;
+}
+
+@media (max-width: 1090px) and (min-width: 900px){
+    .js{
+        width: 60%;
+    }
+    .rc{
+        width: 55%;
+    }
+    .ht{
+        width: 65%;
+    }
+    .nd{
+        width: 35%;
+    }
+    .ex{
+        width: 45%;
+    }
+    .mn{
+        width: 55%;
+    }
+    .vr{
+        width: 45%;
+    }
+    .nx{
+        width: 45%;
+    }
+    .gt{
+        width: 60%;
+    }
+}
+
+@media(max-width: 900px) and (min-width: 700px){
+    .js{
+        width: 50%;
+    }
+    .rc{
+        width: 45%;
+    }
+    .ht{
+        width: 55%;
+    }
+    .nd{
+        width: 25%;
+    }
+    .ex{
+        width: 35%;
+    }
+    .mn{
+        width: 45%;
+    }
+    .vr{
+        width: 35%;
+    }
+    .nx{
+        width: 35%;
+    }
+    .gt{
+        width: 50%;
+    }
+}
+@media(max-width: 700px) and (min-width: 550px){
+    .skill{
+        font-size: 17px;
+    }
+    .js{
+        width: 40%;
+    }
+    .rc{
+        width: 35%;
+    }
+    .ht{
+        width: 45%;
+    }
+    .nd{
+        width: 19%;
+    }
+    .ex{
+        width: 25%;
+    }
+    .mn{
+        width: 35%;
+    }
+    .vr{
+        width: 25%;
+    }
+    .nx{
+        width: 25%;
+    }
+    .gt{
+        width: 40%;
+    }
+}
+@media(max-width: 550px) and (min-width: 450px){
+    .skill{
+        font-size: 15px;
+        min-width: 80px;
+    }
+    .skill span{
+        left: 120px;
+        margin-top: 9px
+    }
+    .skill-cont{
+        padding-left: 20px;
+    }
+    .js{
+        width: 30%;
+    }
+    .rc{
+        width: 25%;
+    }
+    .ht{
+        width: 35%;
+    }
+    .nd{
+        width: 15%;
+    }
+    .ex{
+        width: 18%;
+    }
+    .mn{
+        width: 25%;
+    }
+    .vr{
+        width: 18%;
+    }
+    .nx{
+        width: 18%;
+    }
+    .gt{
+        width: 30%;
+    }
+
+}
+
+@media(max-width: 450px) and (min-width: 350px){
+    .skill{
+        font-size: 12px;
+        min-width: 60px;
+    }
+    .skill span{
+        left: 100px;
+        margin-top: 6px
+    }
+    .skill-cont{
+        padding-left: 10px;
+        margin: -10px;
+    }
+    .js{
+        width: 25%;
+    }
+    .rc{
+        width: 20%;
+    }
+    .ht{
+        width: 30%;
+    }
+    .nd{
+        width: 12%;
+    }
+    .ex{
+        width: 15%;
+    }
+    .mn{
+        width: 20%;
+    }
+    .vr{
+        width: 15%;
+    }
+    .nx{
+        width: 15%;
+    }
+    .gt{
+        width: 25%;
+    }
+}

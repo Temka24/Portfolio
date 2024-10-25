@@ -1,0 +1,188 @@
+ .home{
+    display: flex;
+    gap: 7em;
+    padding: 40px;
+ }
+ h1{
+    font-size: 50px;
+ }
+ .home img{
+    width: 17em;
+    height: 19em;
+    border-radius: 2.5em;
+    margin-top: 40px;
+    margin-right: 30px;
+ }
+ .home img:hover, .home img:active{
+    box-shadow: 0 0 10px 3px #B923E1,
+                0 0 15px 6px #DA7C25 ;
+}
+ h1 span{
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -webkit-text-fill-color: transparent;
+ }
+ .social-icons{
+    font-size: 1.5em;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+ }
+ .social-icons i{
+    border: 0.3px solid aqua;
+    border-radius: 50%;
+    padding: 10px;
+    transition: 0.3s;
+ }
+ .social-icons i:hover, .social-icons i:active{
+    color: aqua;
+    box-shadow: 0 0 5px aqua,
+                0 0 8px aqua;
+    transform: translateY(-6px);
+ }
+ .header p{
+    word-spacing: 6px;
+ }
+ .me{
+    border: 0.1px solid #fff;
+    border-radius: 20px;
+    padding-left: 10px;
+    margin-top: 20px;
+ }
+ .btn{
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-top: 20px;
+ }
+ .btn button{
+    height: 40px;
+    width: 100px;
+    font-size: 15px;
+    border-radius: 10px;
+    border: transparent;
+    transition: 1s;
+ }
+ .btn button:nth-child(1){
+    background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06% );
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+ }
+ .btn button:nth-child(2){
+    background: #000;
+    border: 0.3px solid #fff;
+ }
+ .btn button:hover, .btn button:active{
+    background: linear-gradient(0deg, #DA7C25 0.36%, #B923E1 102.06% );
+    border: 0.2px solid #fff;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-shadow: 0 0 9px #B923E1;
+ }
+ .anime{
+    font-size: 30px;
+ }
+ .anime span{
+    position: relative;
+ }
+ .anime span::before{
+    content: "Fullstack developer";
+    background: linear-gradient(0deg, #DA7C25 0.36%, #B923E1 102.06% );
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: word 20s linear infinite;
+ }
+ .anime span::after{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: calc(100% + 8px);
+    background-color: #060417;
+    right: -8px;
+    animation: cursor 0.6s infinite, typing 20s steps(12) infinite;
+ }
+ @keyframes word{
+    0%, 20%{
+        content: "Fullstack developer";
+    }
+    21%, 40%{
+        content: "Mobile app developer";
+    }
+    41%, 60%{
+        content: 'Web developer';
+    }
+    61%, 80%{
+        content: 'Fullstack developer';
+    }
+    81%, 100%{
+        content: 'Software engineer';
+    }
+ }
+ @keyframes cursor{
+    to{
+        border-left: 2px solid #fff;
+    }
+ }
+ @keyframes typing{
+    10%,
+    15%,
+    30%,
+    35%,
+    50%,
+    55%,
+    70%,
+    75%,
+    90%,
+    95%{
+        width: 0;
+    }
+    5%,
+    20%,
+    25%,
+    40%,
+    45%,
+    60%,
+    65%,
+    80%,
+    85%,
+    100%{
+        width: calc(100% + 8px);
+    }
+ }
+
+
+ @media(max-width: 450px) and (min-width: 350px){
+   .home{
+      flex-direction: column;
+   }
+   h1{
+      text-align: center;
+   }
+   .anime{
+      font-size: 20px;
+      text-align: center;
+   }
+   .me p{
+      font-size: 13px;
+   }
+   .social-icons{
+      font-size: 15px;
+   }
+   .home img{
+      height: 14em;
+      width: 12em;
+      margin-top: -30px;
+      margin-left: 57px;
+   }
+ }
+
+ 

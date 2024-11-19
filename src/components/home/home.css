@@ -2,21 +2,16 @@
     display: flex;
     gap: 7em;
     padding: 40px;
+    margin-top: 30px;
  }
  h1{
     font-size: 50px;
  }
  .home img{
-    width: 17em;
-    height: 19em;
-    border-radius: 2.5em;
-    margin-top: 40px;
-    margin-right: 30px;
+   aspect-ratio: 1/1;
+   height: 30vw;
+   margin-top: 130px;
  }
- .home img:hover, .home img:active{
-    box-shadow: 0 0 10px 3px #B923E1,
-                0 0 15px 6px #DA7C25 ;
-}
  h1 span{
     background: linear-gradient(267deg, #DA7C25 0.36%, #B923E1 102.06% );
     background-clip: text;
@@ -59,8 +54,6 @@
     margin-top: 20px;
  }
  .btn button{
-    height: 40px;
-    width: 100px;
     font-size: 15px;
     border-radius: 10px;
     border: transparent;
@@ -73,9 +66,13 @@
     justify-content: center;
     align-items: center;
  }
+ .btn button:nth-child(1) a{
+   text-decoration: none;
+ }
  .btn button:nth-child(2){
-    background: #000;
-    border: 0.3px solid #fff;
+   background-color: #000;
+   color: #fff;
+   border: 1px solid #fff;
  }
  .btn button:hover, .btn button:active{
     background: linear-gradient(0deg, #DA7C25 0.36%, #B923E1 102.06% );
@@ -178,10 +175,8 @@
       font-size: 15px;
    }
    .home img{
-      height: 14em;
-      width: 12em;
-      margin-top: -30px;
-      margin-left: 57px;
+      margin-top: -40px;
+      height: 200px;
    }
  }
 

@@ -2,7 +2,6 @@
     height: 950px;
     width: 80%;
     margin: auto;
-    margin-top: 4em;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, auto);
@@ -11,6 +10,10 @@
     padding: 30px;
     background-color: rgba(30, 56, 61, 0.2);
     border-radius: 30px;
+    margin-bottom: 30px;
+}
+.Project-div{
+    margin-bottom: 30px;
 }
 .work{
     border: 1px solid rgb(74, 74, 74) ;
@@ -71,15 +74,20 @@ h2{
     background-color: transparent;
     color: aqua;
 }
+.get button a{
+    text-decoration: none;
+    color: inherit;
+
+}
 .get button:nth-child(1):hover, .get button:nth-child(1):active{
     background-color: transparent;
     color: aqua;
     transition: 0.4s;
     border: 0.5px solid aqua;
 }
-.work:active{
-    transform: scale(1.05);
-    transition: 0.2s;
+.work:hover{
+    transform: scale(1.03);
+    transition: 0.4s linear;
 }
 
 @media(max-width: 450px) and (min-width: 350px){
@@ -100,4 +108,13 @@ h2{
         width: 280px;
     }
 
+}
+.reveal {
+    opacity: 0;
+    transition: opacity 0.8s ease, transform 0.8s ease;
+    transform: translateY(50px);
+}
+.reveal.sr {
+    opacity: 1;
+    transform: translate(0);
 }

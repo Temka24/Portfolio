@@ -9,9 +9,23 @@ import arc from "../../asset/archery.png"
 import tw  from "../../asset/2048-game.png"
 import con from "../../asset/connect-4.png"
 import pong  from "../../asset/pong.png"
+import { useEffect } from 'react';
+import ScrollReveal from 'scrollreveal';
 
 export default function Project(props) {
+
+        useEffect(() => {
+          // ScrollReveal-ийн тохиргоог хийх
+          ScrollReveal().reveal('.reveal', {
+            origin: 'bottom',  // Хаанаас илрэхийг заана
+            distance: '20px',  // Хэр их зайнаас хөдөлгөхийг заана
+            duration: 800,     // Анимацийн хугацаа
+            delay: 200,        // Дараалал
+            reset: true,       // Хүссэн тохиолдолд дахин давтах
+          });
+        }, []);
     
+
 
     return (
         <div id='project' className='Project-div'>
@@ -19,30 +33,29 @@ export default function Project(props) {
             <h2>My project</h2>
             
 
-
-          <div className='project'>
+          <div className='project reveal'>
 
            <div className='work'>
-                <img src={tik} alt='tik'></img>
+                <img src={tik} alt='tik-tac-toe'></img>
                 <div className='name'>Tik-Tac-Toe</div>
                 <div className='used'>JS, HTML, CSS, Canvas</div>
                 <hr />
 
                 <div className='get'>
-                    <button>Demo</button>
-                    <button>Source Code</button>
+                    <button> <a href='https://tik-tac-toe-eta.vercel.app/' target='blank'> Demo </a></button>
+                    <button> <a href='https://github.com/Temka24/TikTacToe' target='blank'>Source Code</a></button>
                 </div>
            </div>
 
            <div className='work'>
-                <img src={snake} alt='tik'></img>
+                <img src={snake} alt='snake'></img>
                 <div className='name'>Snake game</div>
                 <div className='used'>JS, HTML, CSS, Canvas</div>
                 <hr />
 
                 <div className='get'>
-                    <button>Demo</button>
-                    <button>Source Code</button>
+                    <button><a href='https://snake-game-weld-nine.vercel.app/' target='blank'>Demo</a></button>
+                    <button> <a href='https://github.com/Temka24/Snake-game' target='blank'>Source Code </a></button>
                 </div>
            </div>
 
@@ -73,12 +86,12 @@ export default function Project(props) {
            <div className='work'>
                 <img src={con} alt='tik'></img>
                 <div className='name'>Connect-4</div>
-                <div className='used'>JS, HTML, CSS, Canvas, React</div>
+                <div className='used'>JS, HTML, CSS, Canvas</div>
                 <hr />
 
                 <div className='get'>
-                    <button>Demo</button>
-                    <button>Source Code</button>
+                    <button> <a href='https://connect-4-orcin-alpha.vercel.app/' target='blank'> Demo </a> </button>
+                    <button> <a href='https://github.com/Temka24/Connect-4' target='blank'> Source Code </a> </button>
                 </div>
            </div>
 
@@ -119,13 +132,6 @@ export default function Project(props) {
                     <button>Source Code</button>
                 </div>
            </div>
-
-
-
-
-
-
-
 
         </div>
 

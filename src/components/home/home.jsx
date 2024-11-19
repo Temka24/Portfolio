@@ -1,6 +1,8 @@
 import React from 'react'
 import './home.css'
-import pro from "../../asset/pro.png"
+import { Link } from 'react-scroll'
+import resume from '../../asset/resume.pdf'
+import pro from '../../asset/output-onlinegiftools.gif'
 
 export default function Home(props) {
     
@@ -23,21 +25,19 @@ export default function Home(props) {
                 </div>
 
                 <div class="social-icons">
-                    <i class='bx bxl-linkedin'></i>
-                    <i class='bx bxl-github'></i>
-                    <i class='bx bxl-instagram'></i>
-                    <i class='bx bxl-twitter'></i>
+                    <a href='https://github.com/Temka24' target='blank'> <i class='bx bxl-github'> </i></a> 
+                    <a href='https://www.linkedin.com/in/temka-b-672929322/' target='blank'> <i class='bx bxl-linkedin'></i></a>
+                    <a href='https://www.instagram.com/_cs_ms_try/' target='blank'><i class='bx bxl-instagram'></i></a>
                 </div>
 
                <div className='btn'> 
-                    <button><i class='bx bxs-download bx-rotate-0' ></i>resume</button>
-                    <button className='cnt'>Contact</button>
+                    <button><i class='bx bxs-download bx-rotate-0' ></i><a href={resume} download>resume </a></button>
+                    <button className='cnt'><Link to='contact' spy={true} smooth={true} duration={500} > Contact </Link></button>
                </div>
                 
             </div>
 
-            <img src={pro} alt="pro" />
-            
+            <img src={pro} alt="pro"/>
         </div>
     )
 }

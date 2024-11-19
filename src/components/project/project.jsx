@@ -33,7 +33,7 @@ export default function Project(props) {
             <h2>My project</h2>
             
 
-          <div className='project reveal'>
+          <div className='project'>
 
            <div className='work'>
                 <img src={tik} alt='tik-tac-toe'></img>

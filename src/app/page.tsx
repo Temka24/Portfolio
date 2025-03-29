@@ -4,7 +4,6 @@ import Image from "next/image";
 import Navbar from "@/component/navbar";
 import { TypeAnimation } from "react-type-animation";
 import { sora } from "./font";
-import { useScroll } from "motion/react"
 import Tooltip from '@mui/material/Tooltip';
 
 import TwitterIcon from '@mui/icons-material/Twitter';
@@ -340,11 +339,11 @@ const Home: React.FC = () => {
 						<h1 className="gradientText font-[700] text-[40px]">Get in touch</h1>
 						<ul className="w-[400px] flex flex-col gap-[10px]">
 							<li role="list" className="list-disc marker:text-sky-400 text-white/50">
-								We love questions and feedback - and we're always happy to help!
+								We love questions and feedback - and we&apos;re always happy to help!
 								Here are some ways to contact us.
 							</li>
 							<li role="list" className="list-disc marker:text-sky-400 text-white/50">
-								Thinking about a new project, a problem to solve, or just want to connect? Let's do it!
+								Thinking about a new project, a problem to solve, or just want to connect? Let&apos;s do it!
 							</li>
 						</ul>
 						<div className="flex flex-col items-start justify-center gap-[10px] font-[700] *:text-[20px] mt-[30px]">

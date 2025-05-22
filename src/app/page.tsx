@@ -18,6 +18,7 @@ import PhoneIcon from '@mui/icons-material/Phone';
 import EmailIcon from '@mui/icons-material/Email';
 import LanguageIcon from '@mui/icons-material/Language';
 import { Zoom } from "@mui/material";
+import { motion } from "motion/react";
 
 
 const Home: React.FC = () => {
@@ -371,38 +372,38 @@ const Home: React.FC = () => {
 								type="text"
 								placeholder="Name"
 								required
-								className="bg-transparent border border-[2px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px]"
+								className="bg-transparent border-[2px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px]"
 							/>
 							<input
 								type="text"
 								placeholder="Email"
 								required
-								className="bg-transparent border border-[2px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px]"
+								className="bg-transparent border-[2px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px]"
 							/>
 						</div>
 						<input
 							type="text"
 							placeholder="Subject"
 							required
-							className="bg-transparent border border-[2px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px] w-[100%]"
+							className="bg-transparent border-[2px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px] w-[100%]"
 						/>
 						<textarea
 							rows={7}
 							required
 							placeholder="Message"
-							className="bg-transparent border border-[2px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px] w-[100%]"
+							className="bg-transparent border-[2px] border-[#2a1454] focus:border-pink-500/70 focus:outline focus:outline-pink-500/70 placeholder:text-joke/50 text-joke rounded-[6px] px-[20px] py-[8px] w-[100%]"
 						/>
 						<input
 							type="submit"
 							value="Submit"
-							className="border border-[2px] border-joke text-joke font-[700] rounded-[20px] px-[25px] py-[10px] cursor-pointer self-start ml-[10%] capitalize hover:bg-gradient-to-r from-[#9500ff] via-[#2a1454] to-[#9500ff] bg-[length:300%] cursor-pointer transition-all duration-700 hover:bg-right"
+							className="border-[2px] border-joke text-joke font-[700] rounded-[20px] px-[25px] py-[10px] self-start ml-[10%] capitalize hover:bg-gradient-to-r from-[#9500ff] via-[#2a1454] to-[#9500ff] bg-[length:300%] cursor-pointer transition-all duration-700 hover:bg-right"
 						/>
 					</form>
 				</div>
 			</div>
 
 			<div className="bg-[#000] h-[300px] w-[100vw]">
-				<div className="px-[90px] pt-[40px] w-screen w-[1600px] relative mx-auto flex flex-col items-center justify-center gap-[30px] border border-transparent rounded-t-[100px] shadow-[0_0_10px_#2a1454] mb-0 pb-[40px]">
+				<div className="px-[90px] pt-[40px] w-screen relative mx-auto flex flex-col items-center justify-center gap-[30px] border border-transparent rounded-t-[100px] shadow-[0_0_10px_#2a1454] mb-0 pb-[40px]">
 					<div className="h-[60px] w-[60px]">
 						<Image
 							src="/logo.png"

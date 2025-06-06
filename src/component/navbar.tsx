@@ -33,7 +33,7 @@ const Navbar: React.FC = () => {
                     <div className="sunny">
                         <WbSunnyIcon sx={{ fontSize: "40px" }} />
                     </div>
-                    <a href="#contact" className="navlistBtn" onClick={() => setActiveMenu(5)}>Hire Me</a>
+                    <a href="#contact" className="navlistBtn" onClick={() => setActiveMenu(5)}>Hire Me !</a>
                 </div>
             </div>
         </>

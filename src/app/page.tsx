@@ -104,7 +104,7 @@ const Home: React.FC = () => {
 			imageUrl: '/logo/prisma.webp'
 		},
 		{
-			name: "Git",
+			name: "Git & Github",
 			imageUrl: '/logo/git.svg'
 		},
 		{
